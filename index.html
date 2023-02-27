@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculo Plazo Fijo</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/194dc9205f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<header>
+		<h1>Calcula tu Plazo Fijo</h1>
+	</header>
+
+	<main>
+		<div class="monto-container">
+			<label for="porcentaje">Ingresa el porcentaje anual
+				<input type="number" name="porcentaje" id="porcentaje" class="monto" placeholder="ej. 50" autofocus title="Debe ingresar el porcentaje anual que le abonara la entidad sin el signo %">
+			</label>
+			<label for="monto">Ingresa el monto a calcular
+				<input type="number" name="monto" id="monto" class="monto" placeholder="ej.: 100000" title="Debe ingresar el monto que desea simular el plazo fijo">
+			</label>
+			<button id='callback-btn' class="btn-monto" type="button" data-btn>Calcular</button>	
+		</div>
+
+		<div class="mensual">
+			<p id="mesUno">Primer mes:</p>
+			<p id="mesDos">Segundo mes:</p>
+			<p id="mesTres">Tercer mes:</p>
+			<p id="mesCuatro">Cuarto mes:</p>
+			<p id="mesCinco">Quinto mes:</p>
+			<p id="mesSeis">Sexto mes:</p>
+			<p id="mesSiete">Septimo mes:</p>
+			<p id="mesOcho">Octavo mes:</p>
+			<p id="mesNueve">Noveno mes:</p>
+			<p id="mesDiez">Decimo mes:</p>
+			<p id="mesOnce">Undecimo mes:</p>
+			<p id="mesDoce">Duodecimo mes:</p>
+		</div>
+		
+		<div class="alert__numerico inactive">
+			<div class="alert__numerico--textContainer">
+				<img class="alert_numerico--icon" src="img/rectangle-xmark-solid.svg" alt="icono de cerrar" />
+				<p class="alert__numerico--texto">Debe ingresar un valor numerico sin caracteres especiales</p>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<p>&copy; Copiright <a href="https://www.erwebp.com.ar" target="_blank">Emmanuel Ramello</a> 2022</p>
+	</footer>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
