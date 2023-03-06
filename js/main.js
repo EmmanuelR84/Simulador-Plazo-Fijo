@@ -34,37 +34,37 @@ function calcular () {
 		let uno = parseInt(monto) + parseInt(interes);
 		mesUno.innerHTML = `1° mes: $${uno}`;
 
-		let dos = parseInt(uno) + (((parseInt(uno) * anual)/100)/12);
+		let dos = Math.floor(parseInt(uno) + (((parseInt(uno) * anual)/100)/12));
 		mesDos.innerHTML = `2° mes: $${dos}`;
 
-		let tres = parseInt(dos) + (((parseInt(dos) * anual)/100)/12);
+		let tres = Math.floor(parseInt(dos) + (((parseInt(dos) * anual)/100)/12));
 		mesTres.innerHTML = `3° mes: $${tres}`;
 
-		let cuatro = parseInt(tres) + (((parseInt(tres) * anual)/100)/12);
+		let cuatro = Math.floor(parseInt(tres) + (((parseInt(tres) * anual)/100)/12));
 		mesCuatro.innerHTML = `4° mes: $${cuatro}`;
 
-		let cinco = parseInt(cuatro) + (((parseInt(cuatro) * anual)/100)/12);
+		let cinco = Math.floor(parseInt(cuatro) + (((parseInt(cuatro) * anual)/100)/12));
 		mesCinco.innerHTML = `5° mes: $${cinco}`;
 
-		let seis = parseInt(cinco) + (((parseInt(cinco) * anual)/100)/12);
+		let seis = Math.floor(parseInt(cinco) + (((parseInt(cinco) * anual)/100)/12));
 		mesSeis.innerHTML = `6° mes: $${seis}`;
 
-		let siete = parseInt(seis) + (((parseInt(seis) * anual)/100)/12);
+		let siete = Math.floor(parseInt(seis) + (((parseInt(seis) * anual)/100)/12));
 		mesSiete.innerHTML = `7° mes: $${siete}`;
 
-		let ocho = parseInt(siete) + (((parseInt(siete) * anual)/100)/12);
+		let ocho = Math.floor(parseInt(siete) + (((parseInt(siete) * anual)/100)/12));
 		mesOcho.innerHTML = `8° mes: $${ocho}`;
 
-		let nueve = parseInt(ocho) + (((parseInt(ocho) * anual)/100)/12);
+		let nueve = Math.floor(parseInt(ocho) + (((parseInt(ocho) * anual)/100)/12));
 		mesNueve.innerHTML = `9° mes: $${nueve}`;
 
-		let diez = parseInt(nueve) + (((parseInt(nueve) * anual)/100)/12);
+		let diez = Math.floor(parseInt(nueve) + (((parseInt(nueve) * anual)/100)/12));
 		mesDiez.innerHTML = `10° mes: $${diez}`;
 
-		let once = parseInt(diez) + (((parseInt(diez) * anual)/100)/12);
+		let once = Math.floor(parseInt(diez) + (((parseInt(diez) * anual)/100)/12));
 		mesOnce.innerHTML = `11° mes: $${once}`;
 
-		let doce = parseInt(once) + (((parseInt(once) * anual)/100)/12);
+		let doce = Math.floor(parseInt(once) + (((parseInt(once) * anual)/100)/12));
 		mesDoce.innerHTML = `12° mes: $${doce}`;
 
 	}
